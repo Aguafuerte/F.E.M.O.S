@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Íntera</title>
+    <link rel="stylesheet" href="carrito.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-center" style="border: none; box-shadow: none; width: 100%; height: 100%; padding: 12px;">
+            <h1 class="navbar-title" style="height: 10px;">Íntera</h1>
+        </div>
+        <div class="navbar-right">
+            <a href="https://sites.google.com/cesd.edu.ar/femos/inicio" class="home-link">Volver a inicio</a>
+        </div>
+    </nav>
+    <div>
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br>
+        
+        <label for="edad">Edad:</label><br>
+        <input type="number" id="edad" name="edad" required><br>
+
+        <label for="trastorno">Trastorno:</label><br>
+        <input type="text" id="trastorno" name="trastorno" required><br>
+        
+        <label for="comentario">Comentario:</label><br>
+        <textarea id="comentario" name="comentario" rows="10" cols="50"></textarea><br>
+
+        <label for="contacto">Contacto</label><br>
+        <input type="tel" id="contacto" name="contacto" required><br>
+
+        <button id="btn">Enviar comentario</button>
+    </div>
+
+    <main class="contenedor">
+        <section class="comentarios" id="comentarios">
+            <h2>Comentarios</h2>
+            <div class="cuadricula-comentarios" style="border: none; box-shadow: none; background-color: #15202b;">
+                <!-- Los productos se añadirán aquí dinámicamente -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        
+            <p style="color: aliceblue;">&copy; 2025. Todos los derechos reservados.</p>
+
+    </footer>
+
+    <script src="Carrito.js"></script>
+</body>
+</html>
